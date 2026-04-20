@@ -89,6 +89,51 @@
             <li><strong>Tag de fechamento(/tag):</strong> Indica o final do elemento(possui uma barra /).</li>
         </ul>
 
+        <h3>1.2 Elementos Vazios (Self-closing)</h3>
+        <h4>Algumas tags não possuem conteúdo de texto e, por isso, não precisam de uma tag de fechamento:</h4>
+        <ul>
+            <li><strong>Tags de função:</strong> Elas executam uma ação direta na página, como o <code>&lt;br&gt;</code> (quebra de linha) ou o <code>&lt;hr&gt;</code> (linha horizontal).</li>
+            <li><strong>Tags de inserção:</strong> Usadas para colocar elementos externos, como o <code>&lt;img&gt;</code> para imagens ou o <code>&lt;input&gt;</code> para campos de digitação.</li>
+            <li><strong>Sintaxe:</strong> No HTML5, você escreve apenas a tag de abertura. Exemplo: <code>&lt;br&gt;</code>.</li>
+        </ul>
+
+        <h3>1.3 Atributos: As Configurações das Tags</h3>
+        <h3>Os atributos dão "superpoderes" ou informações extras às tags. Eles sempre ficam na tag de abertura:</h3>
+        <ul>
+            <li><strong>Padrão de escrita:</strong> <code>nome-do-atributo="valor"</code>.</li>
+            <li><strong>Principais Atributos:</strong></li>
+            <ul>
+                <li><strong>href:</strong> Define o destino de um link (exclusivo da tag <code>&lt;a&gt;</code>).</li>
+                <li><strong>src:</strong> Define o caminho de um arquivo (usado em imagens e vídeos).</li>
+                <li><strong>alt:</strong> Texto alternativo para acessibilidade (descrição da imagem).</li>
+                <li><strong>id e class:</strong> Identificadores usados para aplicar estilos com CSS futuramente.</li>
+            </ul>
+        </ul>
+
+        <h3>1.4 Hierarquia e Nesting (Aninhamento)</h3>
+        <h3>HTML funciona como caixas dentro de caixas. A ordem de abertura e fechamento é sagrada:</h3>
+        <ul>
+            <li><strong>Regra de Ouro:</strong> A última tag a ser aberta deve ser a primeira a ser fechada.</li>
+            <li><strong>Exemplo Correto:</strong> <code>&lt;p&gt;Meu texto &lt;strong&gt;importante&lt;/strong&gt;.&lt;/p&gt;</code></li>
+            <li><strong>Erro Comum:</strong> Fechar a tag "pai" antes da tag "filha". O navegador pode tentar corrigir, mas o código fica "sujo".</li>
+        </ul>
+
+        <h3>1.5 Estrutura Global Obrigatória</h3>
+        <h3>Todo arquivo HTML precisa dessas 4 partes para ser lido corretamente pelos navegadores:</h3>
+        <ol>
+            <li><strong>&lt;!DOCTYPE html&gt;:</strong> Informa que o documento é HTML5 moderno.</li>
+            <li><strong>&lt;html lang="pt-BR"&gt;:</strong> O container raiz que envolve todo o código.</li>
+            <li><strong>&lt;head&gt;:</strong> A área técnica. Contém o título da aba, configurações de acentuação (UTF-8) e links de CSS.</li>
+            <li><strong>&lt;body&gt;:</strong> A área visual. Tudo o que o usuário realmente vê no site.</li>
+        </ol>
+
+        <h3>1.6 Comentários no Código</h3>
+        <ul>
+            <li><strong>Para que servem:</strong> Deixar notas para você ou outros programadores sem que elas apareçam na página.</li>
+            <li><strong>Sintaxe:</strong> <code>&lt;!-- Seu comentário aqui --&gt;</code></li>
+            <li><strong>Dica:</strong> Ótimo para marcar onde começa e termina cada seção do seu caderno no código!</li>
+        </ul>
+
     </section>
 </body>
 </html>
